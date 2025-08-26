@@ -1,0 +1,72 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #293037;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+main {
+  text-align: center;
+}
+
+.clock {
+  background-image: url("Sofian.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 30rem;
+  height: 30rem;
+  border: 5px solid aqua;
+  border-radius: 50%;
+  position: relative;
+  padding: 2rem;
+}
+
+.clock-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-3);
+}
+
+
+.hand {
+  width: 50%;
+  height: 10px;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+}
+
+.houres-hand {
+  background: linear-gradient(to right, aqua, blue);
+}
+
+.minutes-hand {
+  background-color: white;
+}
+
+.secondes-hand {
+  background-color: purple;
+}
+
+button {
+  /* background: linear-gradient(to right, aqua, blue); */
+  /* color: white; */
+  background-color: aqua;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
