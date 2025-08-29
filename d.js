@@ -16,7 +16,7 @@ function clock() {
   minutes = minutes < 10 ? "0" + minutes : minutes;
   secondes = secondes <10 ? "0" + secondes : secondes;
 
-  let time = `${houres} ⌚ ${minutes} ⌚ ${secondes}`;
+  let time = `${houres} ⌚ ${minutes} ⌚ ${secondes} (${period})`;
   document.querySelector(".digital-clock").innerText = time;
 }
 
